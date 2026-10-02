@@ -9,25 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary col-12 bg-dark">
-        <div class="container-fluid">
-            <span class="d-flex gap-3">
-                <img src="logo-n-setas-minimo.svg" alt="" class="col-1">
-                <h3 class="mb-0 mt-2">NEXTY</h3>
-            </span>
-
-            <span class="gap-3">
-                <button class="btn border-0 bg-transparent">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2        7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
-                    </svg>
-                </button>
-                <a href="" class="btn btn-primary">
-                    Sign In
-                </a>
-            </span>
-         </div>
-    </nav>
+    <row >
+        <nav class="navbar bg-body-tertiary col-12 bg-dark">
+            <div class="container-fluid">
+                <span class="d-flex gap-3">
+                    <img src="logo-n-setas-minimo.svg" alt="" class="col-1">
+                    <h3 class="mb-0 mt-2">NEXTY</h3>
+                </span>
+                <span class="gap-3">
+                    <button class="btn border-0 bg-transparent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2        7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                        </svg>
+                    </button>
+                    <a href="" class="btn btn-primary">
+                        Sign In
+                    </a>
+                </span>
+             </div>
+        </nav>
+    </row>
     <div class="text-center mt-5">
         <h1>
             Olá, Samuell
@@ -54,6 +55,57 @@
             <p class="mt-2">QUASE LÁ...</p>
         </div>
             
+        <div class="card col-3 p-3 mt-5 mx-auto">
+            <h3>TREINO</h3>
+            <p>72%</p>
+        <div class="calendario">
+            <i class="bi bi-circle-fill"></i>
+            <i class="bi bi-circle"></i>
+            <i class="bi bi-circle-fill"></i>
+            <i class="bi bi-circle"></i>
+            <i class="bi bi-circle-fill"></i>
+            <i class="bi bi-circle"></i>
+            <i class="bi bi-circle"></i>
 
+            <i class="bi bi-circle"></i>
+            <i class="bi bi-circle-fill"></i>
+            <i class="bi bi-circle"></i>
+            <i class="bi bi-circle-fill"></i>
+            <i class="bi bi-circle"></i>
+            <i class="bi bi-circle-fill"></i>
+            <i class="bi bi-circle"></i>
+        </div>
+            <p>TÁ INDO BEM!</p>
+        </div>
+    </div>
+</div>
+    <div class="text-center mt-5 mb-5">
+        <a href="" class="btn btn-primary">
+            VER METAS
+        </a>
+    </div>
+
+    <h2 class="text-center">Faça hoje!</h2>
+
+        <ul class="list-group col-4">
+        <li class="list-group-item">
+            Corra 30km
+            <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+        </li>
+        <li class="list-group-item">
+            Estude 3 seções
+            <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+            </div>
+        </li>
+        <li class="list-group-item">
+            Treino de Perna
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Marcar como feito</label>
+        </li>
+</ul>
 </body>
 </html>
