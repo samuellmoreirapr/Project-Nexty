@@ -7,3 +7,11 @@ document.querySelectorAll(".categoria").forEach(categoria => {
 
     categoria.style.color = isDark ? "#fff" : "#000";
 });
+
+const checkbox = document.querySelector("#minhaCheckbox");
+
+checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+        checkbox.disabled = true;
+    }
+});

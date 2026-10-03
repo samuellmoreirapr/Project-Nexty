@@ -51,11 +51,40 @@ body {
 
 .categoria {
     border-radius: 10%;
-    background-color: rgb(255, 0, 0);
     padding: 1%;
     font-size: 70%;
 }
 
 .botao {
     font-size: 0.9rem;
+}
+
+.cardd {
+    transition: 0.2s;
+}
+
+.cardd:hover {
+    transform: translateY(-3px);
+    background-color: #36371f;
+}
+
+.inter {
+    transition: 0.2s;
+}
+
+.inter:hover {
+    transform: translateY(-3px);
+    color: #D4A72C;
+}
+
+.aa {
+    color: white;
+}
+
+.offcanvas.offcanvas-start {
+    transition: transform 0.3s ease-in-out !important;
+  }
+
+.offcanvas-backdrop.fade {
+    transition: opacity 0.3s linear !important;
 }
