@@ -12,3 +12,35 @@
 .descricao {
     font-size: 10px;
 }
+
+body {
+    color: white;
+    background-color: #1a222d;
+}
+
+#navbaba {
+    background-color: #1F2937;
+}
+
+.card {
+    color: white;
+    background-color: #1F2937;
+}
+
+.elemento {
+    color: #D4A72C;
+}
+
+.elemento2 {
+    background-color: #D4A72C;
+}
+
+.diario {
+    color: white;
+    background-color: #1F2937;
+    border-color: #1a222d;
+}
+
+.rodape {
+    background-color: #1F2937;
+}
