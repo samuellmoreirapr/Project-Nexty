@@ -8,3 +8,7 @@
 .calendario i {
     font-size: clamp(8px, 1.5vw, 20px);
 }
+
+.descricao {
+    font-size: 10px;
+}
