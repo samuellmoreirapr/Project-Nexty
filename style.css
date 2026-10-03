@@ -39,7 +39,7 @@ body {
 
 .diario {
     color: white;
-    font-size: 90%;
+    font-size: clamp(1px, 2vw, 20px);
     background-color: #1F2937;
     border-color: #1a222d;
 }
@@ -53,4 +53,8 @@ body {
     background-color: rgb(255, 0, 0);
     padding: 1%;
     font-size: 70%;
+}
+
+.botao {
+    font-size: clamp(1px, 2vw, 20px);
 }
