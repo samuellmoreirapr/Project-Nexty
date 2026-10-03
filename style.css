@@ -39,7 +39,7 @@ body {
 
 .diario {
     color: white;
-    font-size: 15px;
+    font-size: 0.9rem;
     background-color: #1F2937;
     border-color: #1a222d;
 }
@@ -56,5 +56,5 @@ body {
 }
 
 .botao {
-    font-size: 10px;
+    font-size: 0.9rem;
 }
