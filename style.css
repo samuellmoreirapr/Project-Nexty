@@ -10,7 +10,8 @@
 }
 
 .descricao {
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 body {
@@ -43,4 +44,11 @@ body {
 
 .rodape {
     background-color: #1F2937;
+}
+
+.categoria {
+    border-radius: 10%;
+    background-color: rgb(255, 0, 0);
+    padding: 1%;
+    font-size: 70%;
 }
