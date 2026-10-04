@@ -88,3 +88,7 @@ body {
 .offcanvas-backdrop.fade {
     transition: opacity 0.3s linear !important;
 }
+
+#meuMenu {
+    background-color: #1a222d;
+}
