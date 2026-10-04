@@ -17,7 +17,7 @@ checkbox.addEventListener("change", () => {
 });
 
 
-<script>
+
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Garante que o ID corresponde ao elemento do menu
   const menuElement = document.getElementById('meuMenu');
@@ -49,4 +49,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-</script>
