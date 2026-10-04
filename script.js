@@ -17,29 +17,36 @@ checkbox.addEventListener("change", () => {
 });
 
 
-const offcanvasElement = document.getElementById('meuMenu'); // Substitua pelo ID exato da sua div offcanvas
-const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Garante que o ID corresponde ao elemento do menu
+  const menuElement = document.getElementById('meuMenu');
+  if (!menuElement) return;
 
-let menuAbertoPeloHistorico = false;
+  const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(menuElement);
+  let bloqueioVoltar = false;
 
-// 1. Quando o menu abre: empurra um estado fantasma no histórico
-offcanvasElement.addEventListener('show.bs.offcanvas', () => {
-  history.pushState({ menuAberto: true }, '');
-  menuAbertoPeloHistorico = true;
+  // 2. Quando o menu abre completamente:
+  menuElement.addEventListener('shown.bs.offcanvas', () => {
+    // Insere o estado fantasma no histórico
+    history.pushState({ offcanvasAberto: true }, '');
+    bloqueioVoltar = true;
+  });
+
+  // 3. Captura o botão físico/gesto de retroceder do telemóvel:
+  window.addEventListener('popstate', (e) => {
+    if (bloqueioVoltar) {
+      bloqueioVoltar = false;
+      bsOffcanvas.hide(); // Fecha a gaveta
+    }
+  });
+
+  // 4. Se fechar pelo 'X' ou tocando fora, consome o histórico fantasma:
+  menuElement.addEventListener('hidden.bs.offcanvas', () => {
+    if (bloqueioVoltar) {
+      bloqueioVoltar = false;
+      history.back(); // Remove o estado extra
+    }
+  });
 });
-
-// 2. Quando o usuário clica no botão "Voltar" do celular
-window.addEventListener('popstate', (event) => {
-  if (menuAbertoPeloHistorico) {
-    menuAbertoPeloHistorico = false;
-    bsOffcanvas.hide(); // Fecha a barra lateral
-  }
-});
-
-// 3. Se o usuário fechar pelo 'X' ou tocando fora, desfaz o histórico extra
-offcanvasElement.addEventListener('hide.bs.offcanvas', () => {
-  if (menuAbertoPeloHistorico) {
-    menuAbertoPeloHistorico = false;
-    history.back(); // Volta o histórico para não acumular páginas fantasmas
-  }
-});
+</script>
