@@ -97,3 +97,23 @@ body {
     background-color: #1a222d;
     color: #adb5bd;
 }
+
+.form-control {
+  background-color: #1a222d !important; /* Cor do fundo escuro */
+  color: #fff !important;               /* Texto digitado branco */
+  border-color: #495057 !important;     /* Borda discreta */
+}
+
+/* Cor do texto de exemplo */
+.form-control::placeholder {
+  color: #adb5bd !important;
+  opacity: 1 !important;
+}
+
+/* Estado de FOCO (quando clica para digitar) */
+.form-control:focus {
+  background-color: #1a222d !important; /* Mantém o fundo escuro */
+  color: #fff !important;               /* Mantém o texto branco */
+  border-color: #6c757d !important;     /* Borda ao focar */
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1) !important; /* Brilho suave sem ofuscar */
+}
