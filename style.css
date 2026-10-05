@@ -117,3 +117,17 @@ body {
   border-color: #6c757d !important;     /* Borda ao focar */
   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1) !important; /* Brilho suave sem ofuscar */
 }
+
+
+.card-login {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Telas médias para cima (computador/col-md-*): fundo escuro */
+@media (min-width: 768px) {
+  .card-login {
+    background-color: #1a222d; /* Cor do container no PC */
+    border-radius: 0.5rem;
+  }
+}
