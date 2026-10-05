@@ -99,9 +99,9 @@ body {
 }
 
 .form-control {
-  background-color: #1a222d !important; /* Cor do fundo escuro */
-  color: #fff !important;               /* Texto digitado branco */
-  border-color: #495057 !important;     /* Borda discreta */
+  background-color: #1a222d !important; 
+  color: #fff !important;               
+  border-color: #495057 !important;    
 }
 
 /* Cor do texto de exemplo */
@@ -110,12 +110,12 @@ body {
   opacity: 1 !important;
 }
 
-/* Estado de FOCO (quando clica para digitar) */
+
 .form-control:focus {
-  background-color: #1a222d !important; /* Mantém o fundo escuro */
-  color: #fff !important;               /* Mantém o texto branco */
-  border-color: #6c757d !important;     /* Borda ao focar */
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1) !important; /* Brilho suave sem ofuscar */
+  background-color: #1a222d !important; 
+  color: #fff !important;               
+  border-color: #6c757d !important;    
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1) !important; 
 }
 
 
@@ -124,10 +124,10 @@ body {
   box-shadow: none;
 }
 
-/* Telas médias para cima (computador/col-md-*): fundo escuro */
+
 @media (min-width: 768px) {
   .card-login {
-    background-color: #1a222d; /* Cor do container no PC */
+    background-color: #1a222d;
     border-radius: 0.5rem;
   }
 }
